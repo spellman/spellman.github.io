@@ -62,12 +62,12 @@ input, select { vertical-align: middle; }
  */
 
 body {
-font:16px/1.5 'Droid Serif', georgia, serif;
-*font-size:small;
+  font:16px/1.5 'Droid Serif', georgia, serif;
+  *font-size:small;
 } /* Hack retained to preserve specificity */
 
 select, input, textarea, button {
-font: 99% 'Droid Sans', Helvetica, Arial, sans-serif;
+  font: 99% 'Droid Sans', Helvetica, Arial, sans-serif;
 }
 
 /* Normalize monospace sizing:
@@ -109,7 +109,7 @@ pre {
 
 textarea { overflow: auto; } /* www.sitepoint.com/blogs/2010/08/20/ie-remove-textarea-scrollbars/ */
 
-.ie6 legend, .ie7 legend { margin-left: -7px; } 
+.ie6 legend, .ie7 legend { margin-left: -7px; }
 
 /* Align checkboxes, radios, text inputs with their label by: Thierry Koblentz tjkdesign.com/ez-css/css/base.css  */
 input[type="radio"] { vertical-align: text-bottom; }
@@ -122,8 +122,8 @@ label, input[type="button"], input[type="submit"], input[type="image"], button {
 
 /* Webkit browsers add a 2px margin outside the chrome of form elements */
 button, input, select, textarea {
-margin: 0;
-font-family: 'Droid Sans', Helvetica, Arial, sans-serif;
+  margin: 0;
+  font-family: 'Droid Sans', Helvetica, Arial, sans-serif;
 }
 
 /* Colors for form validity */
@@ -181,65 +181,65 @@ a:hover, a:focus { color: #036; }
  */
 
 h1, h2, h3, h4, h5, h6 {
-margin-bottom: 24px;
-font-family: 'Droid Sans', Helvetica, Arial, sans-serif;
-color: #222222;
+  margin-bottom: 24px;
+  font-family: 'Droid Sans', Helvetica, Arial, sans-serif;
+  color: #222222;
 }
 
 h1 {
-font-size: 1.5em; /* 24 px --> 24 px h1 / 16 px baseline = 1.5 em */ 
-line-height: 1em; /* 24 px --> 24 px baseline / 24 px h1 = 1 em */
+  font-size: 1.5em; /* 24 px --> 24 px h1 / 16 px baseline = 1.5 em */
+  line-height: 1em; /* 24 px --> 24 px baseline / 24 px h1 = 1 em */
 }
 
 h2 {
-font-size: 1.375em; /* 22 px */
-line-height: 1.0909em; /* 24 px */
+  font-size: 1.375em; /* 22 px */
+  line-height: 1.0909em; /* 24 px */
 }
 
 h3 {
-font-size: 1.25em; /* 20 px */
-line-height: 1.2em; /* 24 px */
+  font-size: 1.25em; /* 20 px */
+  line-height: 1.2em; /* 24 px */
 }
 
 h4 {
-font-size: 1.125em; /* 18 px */
-line-height: 1.33em; /* 24 px */
+  font-size: 1.125em; /* 18 px */
+  line-height: 1.33em; /* 24 px */
 }
 
 h5 {
-font-size: 1em; /* 16 px */
-line-height: 1.5em; /* 24 px */
+  font-size: 1em; /* 16 px */
+  line-height: 1.5em; /* 24 px */
 }
 
 h6 {
-font-size: 1em; /* 16 px */
-line-height: 1.5em; /* 24 px */
+  font-size: 1em; /* 16 px */
+  line-height: 1.5em; /* 24 px */
 }
 
 /* FIX HELVETICA IMAGES TO 22px, SET h2's TO CORRECT HEIGHTS (heights differ by whether there are descenders or not) */
 
 p {
-margin-bottom: 24px;
+  margin-bottom: 24px;
 }
 
 em, i {
-font-style: italic;
+  font-style: italic;
 }
 
 b {
-font-weight: bold;
+  font-weight: bold;
 }
 
 q {
-display: block;
-margin: 0 60px 0 70px;
-padding-left: 10px;
-text-indent: -0.5em;
+  display: block;
+  margin: 0 60px 0 70px;
+  padding-left: 10px;
+  text-indent: -0.5em;
 }
 
 q b {
-display: block;
-text-indent: 0;
+  display: block;
+  text-indent: 0;
 }
 
 
@@ -250,68 +250,71 @@ text-indent: 0;
 \*======================================================*/
 
 #Header {
-height: 48px;
-background-color: #222222;
-border-bottom: 1px solid #7D0000;
-font-family: 'Droid Sans', Helvetica, Arial, sans-serif;
-font-size: 12px;
-line-height: 2em;
+  height: 48px;
+  background-color: #222222;
+  border-bottom: 1px solid #7D0000;
+  font-family: 'Droid Sans', Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  line-height: 2em;
 }
 
 #HeaderLinks span {
-color: #BBBBBB;
-padding: 12px;
+  color: #BBBBBB;
+  padding: 12px;
 }
 
 #HeaderLinks span, #About, #AboutTextDropdown {
--moz-transition: 0.2s;
--webkit-transition: 0.2s;
--o-transition: 0.2s;
-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
 }
 
 #HeaderLinks span:hover, #HeaderLinks span:focus {
-color: #FFFFFF;
-}
+                           color: #FFFFFF;
+                         }
 
 #HeaderLinks span, #HeaderLinks div {
-float: left;
+  float: left;
 }
 
-#HeaderPhone {
-margin-left: -12px;
-cursor: default;
+#HeaderPhoneLink {
+  margin-left: -12px;
+  cursor: pointer;
 }
 
 #HeaderScheduleLink {
-margin-right: 8px;
-cursor: pointer;
+  margin-right: 8px;
+  cursor: pointer;
 }
 
-#HeaderScheduleLink:hover, #HeaderScheduleLink:focus {
-text-decoration: underline;
+#HeaderScheduleLink:hover,
+#HeaderScheduleLink:focus,
+#HeaderPhoneLink:hover,
+#HeaderPhoneLink:focus {
+  text-decoration: underline;
 }
 
 #HeaderLinks div {
-margin: 0 2px;
-padding: 10px 2px;
+  margin: 0 2px;
+  padding: 10px 2px;
 }
 
 #HeaderLinks div a {
-display: block;
-width: 28px;
-height: 28px;
-background-image: url("../img/sprites.png");
-background-repeat: no-repeat;
+  display: block;
+  width: 28px;
+  height: 28px;
+  background-image: url("../img/sprites.png");
+  background-repeat: no-repeat;
 }
 
 #Facebook a {
-background-position: 0 0;
+  background-position: 0 0;
 }
 
 #Facebook:hover a, #Facebook:focus a {
-background-position: 0 -29px;
-}
+                     background-position: 0 -29px;
+                   }
 /*
 #Twitter a {
 background-position: -29px 0;
@@ -322,93 +325,93 @@ background-position: -29px -29px;
 }
 */
 #LinkedIn a {
-background-position: -58px 0;
+  background-position: -58px 0;
 }
 
 #LinkedIn:hover a, #LinkedIn:focus a {
-background-position: -58px -29px;
-}
+                     background-position: -58px -29px;
+                   }
 
 #AboutWrapper {
-position: relative;
+  position: relative;
 }
 
 #About {
-position: absolute;
-left: 0;
-top: 0;
-height: 36px;
-border-radius: 0 0 6px 6px;
-background-color: #343434;
--moz-box-shadow: 0 2px 0 0 #555555, -1px 0 0 0 #555555, 1px 0 0 0 #555555;
--webkit-box-shadow: 0 2px 0 0 #555555, -1px 0 0 0 #555555, 1px 0 0 0 #555555;
-box-shadow: 0 2px 0 0 #555555, -1px 0 0 0 #555555, 1px 0 0 0 #555555;
-cursor: text;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 36px;
+  border-radius: 0 0 6px 6px;
+  background-color: #343434;
+  -moz-box-shadow: 0 2px 0 0 #555555, -1px 0 0 0 #555555, 1px 0 0 0 #555555;
+  -webkit-box-shadow: 0 2px 0 0 #555555, -1px 0 0 0 #555555, 1px 0 0 0 #555555;
+  box-shadow: 0 2px 0 0 #555555, -1px 0 0 0 #555555, 1px 0 0 0 #555555;
+  cursor: text;
 }
 
 #About:hover, #About:focus {
-height: 210px;
-background-color: #F7F8F8;
--moz-box-shadow: 0 2px 0 0 #BBBBBB, -1px 0 0 0 #BBBBBB, 1px 0 0 0 #BBBBBB;
--webkit-box-shadow: 0 2px 0 0 #BBBBBB, -1px 0 0 0 #BBBBBB, 1px 0 0 0 #BBBBBB;
-box-shadow: 0 2px 0 0 #BBBBBB, -1px 0 0 0 #BBBBBB, 1px 0 0 0 #BBBBBB;
-}
+                height: 210px;
+                background-color: #F7F8F8;
+                -moz-box-shadow: 0 2px 0 0 #BBBBBB, -1px 0 0 0 #BBBBBB, 1px 0 0 0 #BBBBBB;
+                -webkit-box-shadow: 0 2px 0 0 #BBBBBB, -1px 0 0 0 #BBBBBB, 1px 0 0 0 #BBBBBB;
+                box-shadow: 0 2px 0 0 #BBBBBB, -1px 0 0 0 #BBBBBB, 1px 0 0 0 #BBBBBB;
+              }
 
 #About div {
-width: 190px;
-margin: 12px 10px 0;
+  width: 190px;
+  margin: 12px 10px 0;
 }
 
 #About > div > p {
-margin: 0;
+  margin: 0;
 }
 
 #AboutLabel {
-text-align: center;
-color: #BBBBBB;
+  text-align: center;
+  color: #BBBBBB;
 }
 
 #About:hover #AboutLabel, #About:focus #AboutLabel {
-visibility: hidden;
-}
+                            visibility: hidden;
+                          }
 
 #About #AboutTextDropdown {
-margin-top: -240px;
-color: #222222;
-line-height: 1.5em;
+  margin-top: -240px;
+  color: #222222;
+  line-height: 1.5em;
 }
 
 #AboutTextDropdown > div {
-width: 96px;
-height: 96px;
-margin: 12px auto 6px;
-background-image: url("../img/sprites.png");
-background-position: 0 -938px;
-background-repeat: no-repeat;
--moz-transition: 1s linear;
--webkit-transition: 1s linear;
--o-transition: 1s linear;
-transition: 1s linear;
+  width: 96px;
+  height: 96px;
+  margin: 12px auto 6px;
+  background-image: url("../img/sprites.png");
+  background-position: 0 -938px;
+  background-repeat: no-repeat;
+  -moz-transition: 1s linear;
+  -webkit-transition: 1s linear;
+  -o-transition: 1s linear;
+  transition: 1s linear;
 
 }
 
 #About:hover #AboutTextDropdown > div, #About:focus #AboutTextDropdown > div {
--moz-box-shadow: 0 0 12px -6px #222222, 0 0 4px -2px #222222 inset;
--webkit-box-shadow: 0 0 12px -6px #222222, 0 0 4px -2px #222222 inset;
-box-shadow: 0 0 12px -6px #222222, 0 0 4px -2px #222222 inset;
-}
+                                         -moz-box-shadow: 0 0 12px -6px #222222, 0 0 4px -2px #222222 inset;
+                                         -webkit-box-shadow: 0 0 12px -6px #222222, 0 0 4px -2px #222222 inset;
+                                         box-shadow: 0 0 12px -6px #222222, 0 0 4px -2px #222222 inset;
+                                       }
 
 #About:hover #AboutTextDropdown, #About:focus #AboutTextDropdown {
-display: block;
-margin-top: -34px;
-}
+                                   display: block;
+                                   margin-top: -34px;
+                                 }
 
 #About .Tamu {
-color: #7D0000;
+  color: #7D0000;
 }
 
 #About .Tcu {
-color: #342A7B;
+  color: #342A7B;
 }
 
 
@@ -419,102 +422,102 @@ color: #342A7B;
 \*======================================================*/
 
 #Logo {
-margin-top: 24px;
+  margin-top: 24px;
 }
 
 #MainContainer #Logo h1 {
-height: 48px;
-background-image: url("../img/sprites.png");
-background-repeat: no-repeat;
-background-position: 0 -67px;
+  height: 48px;
+  background-image: url("../img/sprites.png");
+  background-repeat: no-repeat;
+  background-position: 0 -67px;
 }
 
 #Tagline {
-margin-top: 72px;
-margin-bottom: 66px;
+  margin-top: 72px;
+  margin-bottom: 66px;
 }
 
 #Tagline h2 {
-margin-bottom: 0;
-font-size: 3.5em;
-line-height: 1.25em;
-font-weight: normal;
-letter-spacing: 1px;
+  margin-bottom: 0;
+  font-size: 3.5em;
+  line-height: 1.25em;
+  font-weight: normal;
+  letter-spacing: 1px;
 }
 
 #MainContainer p {
-color: #222222;
+  color: #222222;
 }
 
 #AlertContainer {
-height: 127px;
-margin: -61px 0 0 103px;
+  height: 127px;
+  margin: -61px 0 0 103px;
 }
 
 #Alert {
-background: none repeat scroll 0 0 #FFCCCC;
-border: 1px solid #FF8888;
-border-radius: 5px 5px 5px 5px;
-width: 252px;
+  background: none repeat scroll 0 0 #FFCCCC;
+  border: 1px solid #FF8888;
+  border-radius: 5px 5px 5px 5px;
+  width: 252px;
 }
 
 #Alert p {
-margin: 12px;
+  margin: 12px;
 }
 
 #MainButtonSchedule {
-width: 250px;
-margin-top: -34px;
-margin-left: auto;
-margin-right: auto;
-border: 2px solid #500000;
-line-height: 2.182em;
-letter-spacing: 2px;
+  width: 250px;
+  margin-top: -34px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid #500000;
+  line-height: 2.182em;
+  letter-spacing: 2px;
 }
 
 .MoreInformationButtonSchedule {
-position: absolute;
-bottom: 48px;
-border: 1px solid #500000;
-font-size: 1.25em;
-line-height: 1.8em;
-letter-spacing: 1px;
+  position: absolute;
+  bottom: 48px;
+  border: 1px solid #500000;
+  font-size: 1.25em;
+  line-height: 1.8em;
+  letter-spacing: 1px;
 }
 
 #MainButtonSchedule, .MoreInformationButtonSchedule {
-cursor: pointer;
-color: #FFFFFF;
-text-shadow: 2px 2px 2px #500000;
-text-align: center;
-border-radius: 6px;
-background: #7D0000; /* Old browsers */
-background: -moz-linear-gradient(top, #960000 0%, #900000 44%, #500000 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#960000), color-stop(44%,#900000), color-stop(100%,#500000)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top, #960000 0%,#900000 44%,#500000 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top, #960000 0%,#900000 44%,#500000 100%); /* Opera11.10+ */
-background: -ms-linear-gradient(top, #960000 0%,#900000 44%,#500000 100%); /* IE10+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#960000', endColorstr='#500000',GradientType=0 ); /* IE6-9 */
-background: linear-gradient(top, #960000 0%,#900000 44%,#500000 100%); /* W3C */
--moz-transition: 0.1s;
--webkit-transition: 0.1s;
--o-transition: 0.1s;
-transition: 0.1s;
+  cursor: pointer;
+  color: #FFFFFF;
+  text-shadow: 2px 2px 2px #500000;
+  text-align: center;
+  border-radius: 6px;
+  background: #7D0000; /* Old browsers */
+  background: -moz-linear-gradient(top, #960000 0%, #900000 44%, #500000 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#960000), color-stop(44%,#900000), color-stop(100%,#500000)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #960000 0%,#900000 44%,#500000 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #960000 0%,#900000 44%,#500000 100%); /* Opera11.10+ */
+  background: -ms-linear-gradient(top, #960000 0%,#900000 44%,#500000 100%); /* IE10+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#960000', endColorstr='#500000',GradientType=0 ); /* IE6-9 */
+  background: linear-gradient(top, #960000 0%,#900000 44%,#500000 100%); /* W3C */
+  -moz-transition: 0.1s;
+  -webkit-transition: 0.1s;
+  -o-transition: 0.1s;
+  transition: 0.1s;
 }
 
 #MainButtonSchedule:hover, #MainButtonSchedule:focus, .MoreInformationButtonSchedule:hover, .MoreInformationButtonSchedule:focus {
-background: #900000; /* Old browsers */
-background: -moz-linear-gradient(top, #B00000 0%, #A00000 44%, #700000 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#B00000), color-stop(44%,#A00000), color-stop(100%,#700000)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top, #B00000 0%,#A00000 44%,#700000 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top, #B00000 0%,#A00000 44%,#700000 100%); /* Opera11.10+ */
-background: -ms-linear-gradient(top, #B00000 0%,#A00000 44%,#700000 100%); /* IE10+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#B00000', endColorstr='#700000',GradientType=0 ); /* IE6-9 */
-background: linear-gradient(top, #B00000 0%,#A00000 44%,#700000 100%); /* W3C */
-}
+                                                                                              background: #900000; /* Old browsers */
+                                                                                              background: -moz-linear-gradient(top, #B00000 0%, #A00000 44%, #700000 100%); /* FF3.6+ */
+                                                                                              background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#B00000), color-stop(44%,#A00000), color-stop(100%,#700000)); /* Chrome,Safari4+ */
+                                                                                              background: -webkit-linear-gradient(top, #B00000 0%,#A00000 44%,#700000 100%); /* Chrome10+,Safari5.1+ */
+                                                                                              background: -o-linear-gradient(top, #B00000 0%,#A00000 44%,#700000 100%); /* Opera11.10+ */
+                                                                                              background: -ms-linear-gradient(top, #B00000 0%,#A00000 44%,#700000 100%); /* IE10+ */
+                                                                                              filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#B00000', endColorstr='#700000',GradientType=0 ); /* IE6-9 */
+                                                                                              background: linear-gradient(top, #B00000 0%,#A00000 44%,#700000 100%); /* W3C */
+                                                                                            }
 
 #MainButtonSchedule:active, .MoreInformationButtonSchedule:active {
-box-shadow: 0 0 3px 1px #500000 inset;
-}
+                              box-shadow: 0 0 3px 1px #500000 inset;
+                            }
 
 /*======================================================*\
 ||                                                      ||
@@ -524,78 +527,78 @@ box-shadow: 0 0 3px 1px #500000 inset;
 
 /* the overlayed element */
 .simple_overlay {
-/* must be initially hidden */
-display:none;
+  /* must be initially hidden */
+  display:none;
 
-/* place overlay on top of other elements */
-z-index:10000;
+  /* place overlay on top of other elements */
+  z-index:10000;
 
-/* styling */
-background-color:#FFF;
+  /* styling */
+  background-color:#FFF;
 
-width:920px;	
-min-height:200px;
-border:1px solid #666;
+  width:920px;
+  min-height:200px;
+  border:1px solid #666;
 
-/* CSS3 styling for latest browsers */
--moz-box-shadow:0 0 90px 5px #000;
--webkit-box-shadow: 0 0 90px #000;	
+  /* CSS3 styling for latest browsers */
+  -moz-box-shadow:0 0 90px 5px #000;
+  -webkit-box-shadow: 0 0 90px #000;
 }
 
 /* close button positioned on upper right corner */
 .simple_overlay .close {
-background-image:url(../img/overlay/close.png);
-position:absolute;
-right:-15px;
-top:-15px;
-cursor:pointer;
-height:35px;
-width:35px;
+  background-image:url(../img/overlay/close.png);
+  position:absolute;
+  right:-15px;
+  top:-15px;
+  cursor:pointer;
+  height:35px;
+  width:35px;
 }
 
-#FormContainer {
-float: left;
-width: 300px;
-height: 568px;
-padding-top: 22px;
+#FormContainer, #Scheduling {
+  float: left;
+  width: 300px;
+  height: 568px;
+  padding-top: 22px;
 }
 
 .panes {
-height: 507px;
-padding-top: 12px;
-background-color: #FFFFFF;
-border-width: 0 1px 1px;
-border-color: transparent #1E1E1E #1E1E1E;
-border-style: solid;
+  height: 507px;
+  padding-top: 12px;
+  background-color: #FFFFFF;
+  border-width: 0 1px 1px;
+  border-color: transparent #1E1E1E #1E1E1E;
+  border-style: solid;
 }
 
-/* initially all panes are hidden */ 
+/* initially all panes are hidden */
 .panes .pane {
-display:none;
+  display:none;
 }
 
 #IframeFailurePlaceholder {
-position: absolute;
-left: 300px;
-top: 0;
-z-index: -1;
-width: 572px;
-height: 520px;
-padding: 24px;
+  position: absolute;
+  left: 300px;
+  top: 0;
+  z-index: -1;
+  width: 572px;
+  height: 520px;
+  padding: 24px;
 }
 
 #IframeFailurePlaceholder h2 {
-text-align: center;
+  text-align: center;
 }
 
 #IframeFailurePlaceholder ul {
-margin-bottom: 24px;
+  margin-bottom: 24px;
 }
 
 .simple_overlay iframe {
-float: left;
-width: 620px;
-height: 568px;
+  float: left;
+  width: 620px;
+  height: 568px;
 }
 
 
@@ -607,69 +610,69 @@ height: 568px;
 \*======================================================*/
 
 #Summary {
-padding-top: 24px;
+  padding-top: 24px;
 }
 
 .Summary {
-height: 146px;
-cursor: pointer;
-font-size: 0.95em;
+  height: 146px;
+  cursor: pointer;
+  font-size: 0.95em;
 }
 
 .Summary, .Summary h2, .Summary h2 span, .Summary p {
--moz-transition: 0.1s;
--webkit-transition: 0.1s;
--o-transition: 0.1s;
-transition: 0.1s;
+  -moz-transition: 0.1s;
+  -webkit-transition: 0.1s;
+  -o-transition: 0.1s;
+  transition: 0.1s;
 }
 
 #SummaryContainer > div.Active {
-cursor: default;
+  cursor: default;
 }
 
 .Summary h2 {
-margin-bottom: 0;
-font-size: 28px;
-line-height: 1.714em;
-font-weight: normal;
+  margin-bottom: 0;
+  font-size: 28px;
+  line-height: 1.714em;
+  font-weight: normal;
 }
 
 .Summary h2, #SummaryContainer > div.Active:hover h2, #SummaryContainer > div.Active:focus h2 {
-color: #333333;
-}
+                                                        color: #333333;
+                                                      }
 
 .Summary:hover h2, .Summary:focus h2, #SummaryContainer > div.Inactive:hover h2, #SummaryContainer > div.Inactive:focus h2 {
-color: #BB0000;
-}
+                                                                                   color: #BB0000;
+                                                                                 }
 
 #SummaryContainer > div.Inactive h2 {
-color: #AAAAAA;
+  color: #AAAAAA;
 }
 
 /* &raquo; link-indicator characters */
 .Summary h2 span, #SummaryContainer > div.Active:hover h2 span, #SummaryContainer > div.Active:focus h2 span {
-position: relative;
-left: 5px;
-top: -1px;
-color: #AAAAAA;
-font-family: "Droid Sans", "courier new", monospace;
-}
+                                                                  position: relative;
+                                                                  left: 5px;
+                                                                  top: -1px;
+                                                                  color: #AAAAAA;
+                                                                  font-family: "Droid Sans", "courier new", monospace;
+                                                                }
 
 .Summary:hover h2 span, .Summary:focus h2 span, #SummaryContainer > div.Inactive:hover h2 span, #SummaryContainer > div.Inactive:focus h2 span {
-color: #BB4444;
-}
+                                                                                                  color: #BB4444;
+                                                                                                }
 
 #SummaryContainer > div.Inactive h2 span {
-color: #CCCCCC;
+  color: #CCCCCC;
 }
 
 #SummaryContainer > div.Inactive p {
-color: #CCCCCC;
+  color: #CCCCCC;
 }
 
 #SummaryContainer > div.Inactive:hover p, #SummaryContainer > div.Inactive:focus p {
-color: #444444;
-}
+                                            color: #444444;
+                                          }
 
 
 
@@ -680,185 +683,185 @@ color: #444444;
 \*======================================================*/
 
 #MoreInformation, #MoreInformationContainer .Information {
-display: none;
+  display: none;
 }
 
 html.no-js #MoreInformation, html.no-js #MoreInformationContainer .Information {
-display: block;
+  display: block;
 }
 
 .Information {
-min-height: 525px;
+  min-height: 525px;
 }
 
 #MoreInformation {
-padding-top: 48px;
-padding-bottom: 24px;
-background-color: #EEEEEE;
+  padding-top: 48px;
+  padding-bottom: 24px;
+  background-color: #EEEEEE;
 }
 
 #MethodContainer, #ExperienceContainer, #CoursesAndRateContainer, #ReviewsAndTwitterContainer {
-position: relative;
+  position: relative;
 }
 
 #MethodContainer > #Method h2 {
-margin-bottom: 0;
-padding-top: 24px;
+  margin-bottom: 0;
+  padding-top: 24px;
 }
 
 #MethodContainer > #Method h3 {
-padding-top: 24px;
+  padding-top: 24px;
 }
 
 #Experience q {
-padding-top: 24px;
+  padding-top: 24px;
 }
 
 #CoursesAndRateButtonSchedule {
-bottom: 24px;
+  bottom: 24px;
 }
 
 #BlinnCollegeCourses, #HighSchoolCourses {
-padding-top: 24px;
+  padding-top: 24px;
 }
 
 #LeaveYourCourseOut {
-margin-top: 24px;
+  margin-top: 24px;
 }
 
 #LeaveYourCourseOut p {
-color: #7D0000;
-font-style: italic;
+  color: #7D0000;
+  font-style: italic;
 }
 
 #RateScheduleLink {
-color: #607890;
-text-decoration: underline;
-cursor: pointer;
+  color: #607890;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 #RateScheduleLink:hover, #RateScheduleLink:focus {
-color: #003366;
-text-decoration: underline;
-}
+                           color: #003366;
+                           text-decoration: underline;
+                         }
 
 #Payment {
-margin: 0 auto;
-width: 78px;
-height: 14px;
-position: relative;
-top: -45px;
-left: 96px;
+  margin: 0 auto;
+  width: 78px;
+  height: 14px;
+  position: relative;
+  top: -45px;
+  left: 96px;
 }
 
 #Payment > div {
-float: left;
-width: 33px;
-height: 14px;
-background-image: url("../img/sprites.png");
-background-repeat: no-repeat;
+  float: left;
+  width: 33px;
+  height: 14px;
+  background-image: url("../img/sprites.png");
+  background-repeat: no-repeat;
 }
 
 #Cash {
-margin-right: 12px;
-background-position: 0 -125px;
+  margin-right: 12px;
+  background-position: 0 -125px;
 }
 
 #Paypal {
-background-position: -131px -125px;
+  background-position: -131px -125px;
 }
 
 .studentComment {
-margin-bottom: 48px;
+  margin-bottom: 48px;
 }
 
 .comment {
-font-style: italic;
+  font-style: italic;
 }
 
 #ReviewsContainer {
-padding: 24px;
-border-radius: 6px;
-background-color: #FFFFFF;
+  padding: 24px;
+  border-radius: 6px;
+  background-color: #FFFFFF;
 }
 
 #ReviewsContainer div {
-margin-left: 10px;
+  margin-left: 10px;
 }
 
 #understanding-of-students-needs {
-background-image: url("../img/sprites.png");
-background-position: -13px -149px;
-background-repeat: no-repeat;
-height: 87px;
+  background-image: url("../img/sprites.png");
+  background-position: -13px -149px;
+  background-repeat: no-repeat;
+  height: 87px;
 }
 
 #knows-material-well {
-background-image: url("../img/sprites.png");
-background-position: -14px -246px;
-background-repeat: no-repeat;
-height: 81px;
-margin-top: 25px;
+  background-image: url("../img/sprites.png");
+  background-position: -14px -246px;
+  background-repeat: no-repeat;
+  height: 81px;
+  margin-top: 25px;
 }
 
 #one-of-the-best {
-background-image: url("../img/sprites.png");
-background-position: -2px -337px;
-background-repeat: no-repeat;
-height: 80px;
-margin-top: 25px;
+  background-image: url("../img/sprites.png");
+  background-position: -2px -337px;
+  background-repeat: no-repeat;
+  height: 80px;
+  margin-top: 25px;
 }
 
 #easily-get-along-with {
-background-image: url("../img/sprites.png");
-background-position: -14px -427px;
-background-repeat: no-repeat;
-height: 66px;
-margin-top: 30px;
+  background-image: url("../img/sprites.png");
+  background-position: -14px -427px;
+  background-repeat: no-repeat;
+  height: 66px;
+  margin-top: 30px;
 }
 
 #learned-more {
-background-image: url("../img/sprites.png");
-background-position: -1px -496px;
-background-repeat: no-repeat;
-height: 53px;
-margin-top: 35px;
+  background-image: url("../img/sprites.png");
+  background-position: -1px -496px;
+  background-repeat: no-repeat;
+  height: 53px;
+  margin-top: 35px;
 }
 
 #genuinely-cares {
-background-image: url("../img/sprites.png");
-background-position: -18px -556px;
-background-repeat: no-repeat;
-height: 100px;
-margin-top: 25px;
+  background-image: url("../img/sprites.png");
+  background-position: -18px -556px;
+  background-repeat: no-repeat;
+  height: 100px;
+  margin-top: 25px;
 }
 
 #very-knowledgeable {
-background-image: url("../img/sprites.png");
-background-position: -3px -666px;
-background-repeat: no-repeat;
-height: 80px;
-margin-top: 20px;
+  background-image: url("../img/sprites.png");
+  background-position: -3px -666px;
+  background-repeat: no-repeat;
+  height: 80px;
+  margin-top: 20px;
 }
 
 #he-is-legit {
-background-image: url("../img/sprites.png");
-background-position: -4px -756px;
-background-repeat: no-repeat;
-height: 52px;
-margin-top: 35px;
+  background-image: url("../img/sprites.png");
+  background-position: -4px -756px;
+  background-repeat: no-repeat;
+  height: 52px;
+  margin-top: 35px;
 }
 
 #no-hes-mine {
-background-image: url("../img/sprites.png");
-background-position: -15px -818px;
-background-repeat: no-repeat;
-height: 86px;
-margin-top: 30px;
+  background-image: url("../img/sprites.png");
+  background-position: -15px -818px;
+  background-repeat: no-repeat;
+  height: 86px;
+  margin-top: 30px;
 }
 
 #Twitter h1 {
-display: none;
+  display: none;
 }
 
 
@@ -869,20 +872,20 @@ display: none;
 \*======================================================*/
 
 footer {
-padding-top: 48px;
+  padding-top: 48px;
 }
 
 body.InformationShowing footer, html.no-js footer {
-background-color: #EEEEEE;
+  background-color: #EEEEEE;
 }
 
 footer p {
-margin-bottom: 0;
-padding-bottom: 24px;
-text-align: center;
-color: #BBBBBB;
-font-size: 14px;
-line-height: 1.714em;
+  margin-bottom: 0;
+  padding-bottom: 24px;
+  text-align: center;
+  color: #BBBBBB;
+  font-size: 14px;
+  line-height: 1.714em;
 }
 
 
@@ -1314,14 +1317,14 @@ input[type="button"] {
   -moz-background-clip: padding;
   -webkit-background-clip: padding;
   background-clip: padding-box;
-background: #7D0000; /* Old browsers */
-background: -moz-linear-gradient(top, #960000 0%, #900000 44%, #500000 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#960000), color-stop(44%,#900000), color-stop(100%,#500000)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top, #960000 0%,#900000 44%,#500000 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top, #960000 0%,#900000 44%,#500000 100%); /* Opera11.10+ */
-background: -ms-linear-gradient(top, #960000 0%,#900000 44%,#500000 100%); /* IE10+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#960000', endColorstr='#500000',GradientType=0 ); /* IE6-9 */
-background: linear-gradient(top, #960000 0%,#900000 44%,#500000 100%); /* W3C */
+  background: #7D0000; /* Old browsers */
+  background: -moz-linear-gradient(top, #960000 0%, #900000 44%, #500000 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#960000), color-stop(44%,#900000), color-stop(100%,#500000)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #960000 0%,#900000 44%,#500000 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #960000 0%,#900000 44%,#500000 100%); /* Opera11.10+ */
+  background: -ms-linear-gradient(top, #960000 0%,#900000 44%,#500000 100%); /* IE10+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#960000', endColorstr='#500000',GradientType=0 ); /* IE6-9 */
+  background: linear-gradient(top, #960000 0%,#900000 44%,#500000 100%); /* W3C */
   border: 1px solid;
   border-color: #ddd #bbb #999;
   cursor: pointer;
@@ -1329,10 +1332,10 @@ background: linear-gradient(top, #960000 0%,#900000 44%,#500000 100%); /* W3C */
   /*
     Helvetica Neue present, because it works better
     for line-height on buttons than Arial, on OS X.
-  */
-/*
+ */
+  /*
   font: 16px/1.5 'Helvetica Neue', Arial, 'Liberation Sans', FreeSans, sans-serif;
-*/
+ */
   outline: 0;
   overflow: visible;
   padding: 3px 10px;
@@ -1348,21 +1351,21 @@ button:hover, button:focus,
 input[type="reset"]:hover, input[type="reset"]:focus,
 input[type="submit"]:hover, input[type="submit"]:focus,
 input[type="button"]:hover, input[type="button"]:focus {
-background: #900000; /* Old browsers */
-background: -moz-linear-gradient(top, #B00000 0%, #A00000 44%, #700000 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#B00000), color-stop(44%,#A00000), color-stop(100%,#700000)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top, #B00000 0%,#A00000 44%,#700000 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top, #B00000 0%,#A00000 44%,#700000 100%); /* Opera11.10+ */
-background: -ms-linear-gradient(top, #B00000 0%,#A00000 44%,#700000 100%); /* IE10+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#B00000', endColorstr='#700000',GradientType=0 ); /* IE6-9 */
-background: linear-gradient(top, #B00000 0%,#A00000 44%,#700000 100%); /* W3C */
-}
+                              background: #900000; /* Old browsers */
+                              background: -moz-linear-gradient(top, #B00000 0%, #A00000 44%, #700000 100%); /* FF3.6+ */
+                              background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#B00000), color-stop(44%,#A00000), color-stop(100%,#700000)); /* Chrome,Safari4+ */
+                              background: -webkit-linear-gradient(top, #B00000 0%,#A00000 44%,#700000 100%); /* Chrome10+,Safari5.1+ */
+                              background: -o-linear-gradient(top, #B00000 0%,#A00000 44%,#700000 100%); /* Opera11.10+ */
+                              background: -ms-linear-gradient(top, #B00000 0%,#A00000 44%,#700000 100%); /* IE10+ */
+                              filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#B00000', endColorstr='#700000',GradientType=0 ); /* IE6-9 */
+                              background: linear-gradient(top, #B00000 0%,#A00000 44%,#700000 100%); /* W3C */
+                            }
 
 button:active,
 input[type="reset"]:active,
 input[type="submit"]:active,
 input[type="button"]:active {
-box-shadow: 0 0 3px 1px #500000 inset;
+  box-shadow: 0 0 3px 1px #500000 inset;
 }
 
 button {
@@ -1372,7 +1375,7 @@ button {
 }
 
 label {
-font-size: 16px;
+  font-size: 16px;
 }
 
 textarea,
@@ -1409,7 +1412,7 @@ input[type="week"] {
   /*
     Leaving out Helvetica Neue, to not throw off size="..."
     on inputs. Arial is more reliable, on Windows and OS X.
-  */
+ */
   font-family: 'Droid Sans', Helvetica, Arial, sans-serif;
   height: 2.5em;
 
@@ -1433,11 +1436,11 @@ input[type="text"],
 input[type="time"],
 input[type="url"],
 input[type="week"] {
-padding: 0.5em 0.25em;
+  padding: 0.5em 0.25em;
 }
 
 textarea {
-padding: 0.5em 0.25em 0.25em;
+  padding: 0.5em 0.25em 0.25em;
 }
 
 /*
@@ -1464,7 +1467,7 @@ textarea.placeholder_text {
     Suppress red glow that Firefox
     adds to form fields by default,
     even when user is still typing.
-  */
+ */
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -1661,161 +1664,161 @@ optgroup {
 \*======================================================*/
 
 #FormContainer form {
-width: 280px;
-margin: 0 auto;
+  width: 280px;
+  margin: 0 auto;
 }
 
 input, textarea, select {
-width: 280px;
+  width: 280px;
 }
 
 textarea {
-resize: none;
+  resize: none;
 }
 
 form {
-font-family: 'Droid Sans', Helvetica, Arial, sans-serif;
+  font-family: 'Droid Sans', Helvetica, Arial, sans-serif;
 }
 
 #Date, #Time {
-float: left;
-top: -12px;
-margin-top: 24px;
+  float: left;
+  top: -12px;
+  margin-top: 24px;
 }
 
 #Date input {
-width: 168px;
+  width: 168px;
 }
 
 #Time {
-margin-left: 12px;
+  margin-left: 12px;
 }
 
 #Time input {
-width: 100px;
+  width: 100px;
 }
 
 #Phone {
-clear:left;
+  clear:left;
 }
 
 input[type="radio"] {
-width: 1em;
-margin-left: 6px;
+  width: 1em;
+  margin-left: 6px;
 }
 
 input, textarea, select {
--moz-transition: 0.1s;
--webkit-transition: 0.1s;
--o-transition: 0.1s;
-transition: 0.1s;
+  -moz-transition: 0.1s;
+  -webkit-transition: 0.1s;
+  -o-transition: 0.1s;
+  transition: 0.1s;
 }
 
 .InputContainer {
-position: relative;
-margin-top: 12px;
+  position: relative;
+  margin-top: 12px;
 }
 
 #Name, #Name {
-margin-top: 0;
+  margin-top: 0;
 }
 
 .InputContainer span {
-position: absolute;
-left: 6px;
-top: 0;
-z-index: 1;
-font-size: 16px;
-line-height: 40px;
-color: #888888;
--moz-transition: 0.1s;
--webkit-transition: 0.1s;
--o-transition: 0.1s;
-transition: 0.1s;
-cursor: text;
+  position: absolute;
+  left: 6px;
+  top: 0;
+  z-index: 1;
+  font-size: 16px;
+  line-height: 40px;
+  color: #888888;
+  -moz-transition: 0.1s;
+  -webkit-transition: 0.1s;
+  -o-transition: 0.1s;
+  transition: 0.1s;
+  cursor: text;
 }
 
 .InputContainer span.Required:after {
-content: '(required)';
-margin-left: 0.5em;
-color: #BBBBBB;
+  content: '(required)';
+  margin-left: 0.5em;
+  color: #BBBBBB;
 }
 
 .InputContainer input:focus + span, .InputContainer textarea:focus + span {
-opacity: 0.6;
-}
+                                      opacity: 0.6;
+                                    }
 
 .ContainsText span {
-font-size: 0 !important;
-opacity: 0 !important;
+  font-size: 0 !important;
+  opacity: 0 !important;
 }
 
 #PreferredContactContainer, select {
-margin-top: 12px;
+  margin-top: 12px;
 }
 
 label, .Label {
-color: #444444;
+  color: #444444;
 }
 
 .Label {
-margin-left: 6px;
-font-size: 16px;
+  margin-left: 6px;
+  font-size: 16px;
 }
 
 label {
-margin-left: -3px;
+  margin-left: -3px;
 }
 
 #Submit {
-text-align:center;
+  text-align:center;
 }
 
 #Submit input {
-padding: 5px 16px;
-text-shadow: 2px 2px 2px #500000;
+  padding: 5px 16px;
+  text-shadow: 2px 2px 2px #500000;
 }
 
 input.Error, textarea.Error, select.Error, radio.Error {
--moz-box-shadow: #FF0000 0 0 7px;
--webkit-box-shadow: #FF0000 0 0 7px;
-box-shadow: #FF0000 0 0 7px;
+  -moz-box-shadow: #FF0000 0 0 7px;
+  -webkit-box-shadow: #FF0000 0 0 7px;
+  box-shadow: #FF0000 0 0 7px;
 }
 
 .ie6 input.Error, .ie7 input.Error, .ie8 input.Error, .ie6 textarea.Error, .ie7 textarea.Error, .ie8 textarea.Error, .ie6 select.Error, .ie7 select.Error, .ie8 select.Error, .ie6 radio.Error, .ie7 radio.Error, .ie8 radio.Error {
-background-color:#FFE0E0;
+  background-color:#FFE0E0;
 }
 
 #FormContainer.Success, #FormContainer.Error {
-width: 250px;
-height: 518px;
-padding: 24px;
+  width: 250px;
+  height: 518px;
+  padding: 24px;
 }
 
 #FormContainer.Success {
-border: 1px solid #D4EBAF;
-background-color: #EDFCD5;
+  border: 1px solid #D4EBAF;
+  background-color: #EDFCD5;
 }
 
 #FormContainer.Error {
-border: 1px solid #F0C0C8;
-background-color: #FFE0E0;
+  border: 1px solid #F0C0C8;
+  background-color: #FFE0E0;
 }
 
 #FormContainer.Success div, #FormContainer.Error div {
-margin-top: 96px;
+  margin-top: 96px;
 }
 
 #FormContainer.Success h2 {
-padding-left:28px;
-background-image: url("../img/sprites.png");
-background-position: 0px -909px;
-background-repeat: no-repeat;
+  padding-left:28px;
+  background-image: url("../img/sprites.png");
+  background-position: 0px -909px;
+  background-repeat: no-repeat;
 }
 
 #FormContainer.Success p, #FormContainer.Error p {
-margin-left:28px;
-font:16px/1.5 'Droid Serif', georgia, serif;
+  margin-left:28px;
+  font:16px/1.5 'Droid Serif', georgia, serif;
 }
 
 
@@ -1894,7 +1897,7 @@ font:16px/1.5 'Droid Serif', georgia, serif;
  */
 @media print {
   * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important;
-  -ms-filter: none !important; } /* Black prints faster: sanbeiji.com/archives/953 */
+      -ms-filter: none !important; } /* Black prints faster: sanbeiji.com/archives/953 */
   a, a:visited { color: #444 !important; text-decoration: underline; }
   a[href]:after { content: " (" attr(href) ")"; }
   abbr[title]:after { content: " (" attr(title) ")"; }
