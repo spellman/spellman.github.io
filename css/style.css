@@ -779,6 +779,17 @@ html.no-js #MoreInformation, html.no-js #MoreInformationContainer .Information {
   font-style: italic;
 }
 
+.student {
+  display: block;
+  color: #888888;
+}
+
+.school, .course {
+  display: block;
+  margin-left: 1.3em;
+  color: #888888;
+}
+
 #ReviewsContainer {
   padding: 24px;
   border-radius: 6px;
