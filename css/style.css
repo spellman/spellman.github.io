@@ -616,8 +616,12 @@ background-position: -29px -29px;
 }
 
 .NoFormExplanation {
-  font-size: 75%;
+  font-size: 70%;
   margin-top: 12px;
+}
+
+.tabbed1 {
+  margin-left: 1em;
 }
 
 
