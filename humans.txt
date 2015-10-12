@@ -1,0 +1,8 @@
+/* SPELLMAN TUTORING */
+  Proprietor : Cort Spellman
+  Site: spellmantutoring.com
+  Facebook: http://www.facebook.com/pages/Spellman-Tutoring/105982122827749?sk=app_190322544333196
+  Location: Midland, TX
+
+/* SITE */
+  Components: HTML5 Boilerplate, Modernizr, jQuery, Formalizer
