@@ -568,7 +568,9 @@ background-position: -29px -29px;
   float: left;
   width: 256px;
   height: 546px;
-  padding: 22px;
+  padding-top: 12px;
+  padding-left: 24px;
+  padding-right: 16px;
 }
 
 .panes {
@@ -609,7 +611,7 @@ background-position: -29px -29px;
   height: 568px;
 }
 
-.example-input {
+.ExampleInput {
   color: #BBBBBB;
 }
 
@@ -783,7 +785,7 @@ html.no-js #MoreInformation, html.no-js #MoreInformationContainer .Information {
   background-position: -131px -125px;
 }
 
-.studentComment {
+.StudentComment {
   margin-bottom: 48px;
 }
 
@@ -791,12 +793,12 @@ html.no-js #MoreInformation, html.no-js #MoreInformationContainer .Information {
   font-style: italic;
 }
 
-.student {
+.Student {
   display: block;
   color: #888888;
 }
 
-.school, .course {
+.School, .Course {
   display: block;
   margin-left: 1.3em;
   color: #888888;
