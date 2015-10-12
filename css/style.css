@@ -263,16 +263,17 @@ q b {
   padding: 12px;
 }
 
-#HeaderLinks span, #About, #AboutTextDropdown {
+#HeaderLinks span #About #AboutTextDropdown {
   -moz-transition: 0.2s;
   -webkit-transition: 0.2s;
   -o-transition: 0.2s;
   transition: 0.2s;
 }
 
-#HeaderLinks span:hover, #HeaderLinks span:focus {
-                           color: #FFFFFF;
-                         }
+#HeaderLinks span:hover,
+#HeaderLinks span:focus {
+  color: #FFFFFF;
+}
 
 #HeaderLinks span, #HeaderLinks div {
   float: left;
@@ -556,11 +557,18 @@ background-position: -29px -29px;
   width:35px;
 }
 
-#FormContainer, #Scheduling {
+#FormContainer {
   float: left;
   width: 300px;
   height: 568px;
   padding-top: 22px;
+}
+
+#Scheduling {
+  float: left;
+  width: 256px;
+  height: 546px;
+  padding: 22px;
 }
 
 .panes {
@@ -599,6 +607,10 @@ background-position: -29px -29px;
   float: left;
   width: 620px;
   height: 568px;
+}
+
+.example-input {
+  color: #BBBBBB;
 }
 
 
