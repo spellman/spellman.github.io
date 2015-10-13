@@ -635,11 +635,12 @@ background-position: -29px -29px;
 
 .ExampleInput {
   color: #BBBBBB;
+  font-size: 14px;
 }
 
 .NoFormExplanation {
   font-size: 70%;
-  margin-top: 12px;
+  margin-top: 32px;
 }
 
 .tabbed1 {
