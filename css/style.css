@@ -275,7 +275,8 @@ q b {
   color: #FFFFFF;
 }
 
-#HeaderLinks span, #HeaderLinks div {
+#HeaderLinks span,
+#HeaderLinks div {
   float: left;
 }
 
@@ -313,9 +314,10 @@ q b {
   background-position: 0 0;
 }
 
-#Facebook:hover a, #Facebook:focus a {
-                     background-position: 0 -29px;
-                   }
+#Facebook:hover a,
+#Facebook:focus a {
+  background-position: 0 -29px;
+}
 /*
 #Twitter a {
 background-position: -29px 0;
@@ -329,9 +331,10 @@ background-position: -29px -29px;
   background-position: -58px 0;
 }
 
-#LinkedIn:hover a, #LinkedIn:focus a {
-                     background-position: -58px -29px;
-                   }
+#LinkedIn:hover a,
+#LinkedIn:focus a {
+  background-position: -58px -29px;
+}
 
 #AboutWrapper {
   position: relative;
@@ -350,13 +353,14 @@ background-position: -29px -29px;
   cursor: text;
 }
 
-#About:hover, #About:focus {
-                height: 210px;
-                background-color: #F7F8F8;
-                -moz-box-shadow: 0 2px 0 0 #BBBBBB, -1px 0 0 0 #BBBBBB, 1px 0 0 0 #BBBBBB;
-                -webkit-box-shadow: 0 2px 0 0 #BBBBBB, -1px 0 0 0 #BBBBBB, 1px 0 0 0 #BBBBBB;
-                box-shadow: 0 2px 0 0 #BBBBBB, -1px 0 0 0 #BBBBBB, 1px 0 0 0 #BBBBBB;
-              }
+#About:hover,
+#About:focus {
+  height: 406px;
+  background-color: #F7F8F8;
+  -moz-box-shadow: 0 2px 0 0 #BBBBBB, -1px 0 0 0 #BBBBBB, 1px 0 0 0 #BBBBBB;
+  -webkit-box-shadow: 0 2px 0 0 #BBBBBB, -1px 0 0 0 #BBBBBB, 1px 0 0 0 #BBBBBB;
+  box-shadow: 0 2px 0 0 #BBBBBB, -1px 0 0 0 #BBBBBB, 1px 0 0 0 #BBBBBB;
+}
 
 #About div {
   width: 190px;
@@ -372,12 +376,13 @@ background-position: -29px -29px;
   color: #BBBBBB;
 }
 
-#About:hover #AboutLabel, #About:focus #AboutLabel {
-                            visibility: hidden;
-                          }
+#About:hover #AboutLabel,
+#About:focus #AboutLabel {
+  visibility: hidden;
+}
 
 #About #AboutTextDropdown {
-  margin-top: -240px;
+  margin-top: -436px;
   color: #222222;
   line-height: 1.5em;
 }
@@ -396,16 +401,28 @@ background-position: -29px -29px;
 
 }
 
-#About:hover #AboutTextDropdown > div, #About:focus #AboutTextDropdown > div {
-                                         -moz-box-shadow: 0 0 12px -6px #222222, 0 0 4px -2px #222222 inset;
-                                         -webkit-box-shadow: 0 0 12px -6px #222222, 0 0 4px -2px #222222 inset;
-                                         box-shadow: 0 0 12px -6px #222222, 0 0 4px -2px #222222 inset;
-                                       }
+#About:hover #AboutTextDropdown > div,
+#About:focus #AboutTextDropdown > div {
+  -moz-box-shadow: 0 0 12px -6px #222222, 0 0 4px -2px #222222 inset;
+  -webkit-box-shadow: 0 0 12px -6px #222222, 0 0 4px -2px #222222 inset;
+  box-shadow: 0 0 12px -6px #222222, 0 0 4px -2px #222222 inset;
+}
 
-#About:hover #AboutTextDropdown, #About:focus #AboutTextDropdown {
-                                   display: block;
-                                   margin-top: -34px;
-                                 }
+#About:hover #AboutTextDropdown,
+#About:focus #AboutTextDropdown {
+  display: block;
+  margin-top: -34px;
+}
+
+#AboutTextDropdown ul {
+  margin-left: 0;
+}
+
+#AboutTextDropdown li {
+  list-style-type: none;
+  margin-bottom: 0.4em;
+  line-height: 1.25em;
+}
 
 #About .Tamu {
   color: #7D0000;
@@ -485,7 +502,8 @@ background-position: -29px -29px;
   letter-spacing: 1px;
 }
 
-#MainButtonSchedule, .MoreInformationButtonSchedule {
+#MainButtonSchedule,
+.MoreInformationButtonSchedule {
   cursor: pointer;
   color: #FFFFFF;
   text-shadow: 2px 2px 2px #500000;
@@ -505,20 +523,24 @@ background-position: -29px -29px;
   transition: 0.1s;
 }
 
-#MainButtonSchedule:hover, #MainButtonSchedule:focus, .MoreInformationButtonSchedule:hover, .MoreInformationButtonSchedule:focus {
-                                                                                              background: #900000; /* Old browsers */
-                                                                                              background: -moz-linear-gradient(top, #B00000 0%, #A00000 44%, #700000 100%); /* FF3.6+ */
-                                                                                              background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#B00000), color-stop(44%,#A00000), color-stop(100%,#700000)); /* Chrome,Safari4+ */
-                                                                                              background: -webkit-linear-gradient(top, #B00000 0%,#A00000 44%,#700000 100%); /* Chrome10+,Safari5.1+ */
-                                                                                              background: -o-linear-gradient(top, #B00000 0%,#A00000 44%,#700000 100%); /* Opera11.10+ */
-                                                                                              background: -ms-linear-gradient(top, #B00000 0%,#A00000 44%,#700000 100%); /* IE10+ */
-                                                                                              filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#B00000', endColorstr='#700000',GradientType=0 ); /* IE6-9 */
-                                                                                              background: linear-gradient(top, #B00000 0%,#A00000 44%,#700000 100%); /* W3C */
-                                                                                            }
+#MainButtonSchedule:hover,
+#MainButtonSchedule:focus,
+.MoreInformationButtonSchedule:hover,
+.MoreInformationButtonSchedule:focus {
+  background: #900000; /* Old browsers */
+  background: -moz-linear-gradient(top, #B00000 0%, #A00000 44%, #700000 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#B00000), color-stop(44%,#A00000), color-stop(100%,#700000)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #B00000 0%,#A00000 44%,#700000 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #B00000 0%,#A00000 44%,#700000 100%); /* Opera11.10+ */
+  background: -ms-linear-gradient(top, #B00000 0%,#A00000 44%,#700000 100%); /* IE10+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#B00000', endColorstr='#700000',GradientType=0 ); /* IE6-9 */
+  background: linear-gradient(top, #B00000 0%,#A00000 44%,#700000 100%); /* W3C */
+}
 
-#MainButtonSchedule:active, .MoreInformationButtonSchedule:active {
-                              box-shadow: 0 0 3px 1px #500000 inset;
-                            }
+#MainButtonSchedule:active,
+.MoreInformationButtonSchedule:active {
+  box-shadow: 0 0 3px 1px #500000 inset;
+}
 
 /*======================================================*\
 ||                                                      ||
@@ -673,17 +695,22 @@ background-position: -29px -29px;
 }
 
 /* &raquo; link-indicator characters */
-.Summary h2 span, #SummaryContainer > div.Active:hover h2 span, #SummaryContainer > div.Active:focus h2 span {
-                                                                  position: relative;
-                                                                  left: 5px;
-                                                                  top: -1px;
-                                                                  color: #AAAAAA;
-                                                                  font-family: "Droid Sans", "courier new", monospace;
-                                                                }
+.Summary h2 span,
+#SummaryContainer > div.Active:hover h2 span,
+#SummaryContainer > div.Active:focus h2 span {
+  position: relative;
+  left: 5px;
+  top: -1px;
+  color: #AAAAAA;
+  font-family: "Droid Sans", "courier new", monospace;
+}
 
-.Summary:hover h2 span, .Summary:focus h2 span, #SummaryContainer > div.Inactive:hover h2 span, #SummaryContainer > div.Inactive:focus h2 span {
-                                                                                                  color: #BB4444;
-                                                                                                }
+.Summary:hover h2 span,
+.Summary:focus h2 span,
+#SummaryContainer > div.Inactive:hover h2 span,
+#SummaryContainer > div.Inactive:focus h2 span {
+  color: #BB4444;
+}
 
 #SummaryContainer > div.Inactive h2 span {
   color: #CCCCCC;
@@ -693,9 +720,10 @@ background-position: -29px -29px;
   color: #CCCCCC;
 }
 
-#SummaryContainer > div.Inactive:hover p, #SummaryContainer > div.Inactive:focus p {
-                                            color: #444444;
-                                          }
+#SummaryContainer > div.Inactive:hover p,
+#SummaryContainer > div.Inactive:focus p {
+  color: #444444;
+}
 
 
 
@@ -705,11 +733,13 @@ background-position: -29px -29px;
 ||                                                      ||
 \*======================================================*/
 
-#MoreInformation, #MoreInformationContainer .Information {
+#MoreInformation,
+#MoreInformationContainer .Information {
   display: none;
 }
 
-html.no-js #MoreInformation, html.no-js #MoreInformationContainer .Information {
+html.no-js #MoreInformation,
+html.no-js #MoreInformationContainer .Information {
   display: block;
 }
 
@@ -723,7 +753,10 @@ html.no-js #MoreInformation, html.no-js #MoreInformationContainer .Information {
   background-color: #EEEEEE;
 }
 
-#MethodContainer, #ExperienceContainer, #CoursesAndRateContainer, #ReviewsAndTwitterContainer {
+#MethodContainer,
+#ExperienceContainer,
+#CoursesAndRateContainer,
+#ReviewsAndTwitterContainer {
   position: relative;
 }
 
@@ -763,10 +796,11 @@ html.no-js #MoreInformation, html.no-js #MoreInformationContainer .Information {
   cursor: pointer;
 }
 
-#RateScheduleLink:hover, #RateScheduleLink:focus {
-                           color: #003366;
-                           text-decoration: underline;
-                         }
+#RateScheduleLink:hover,
+#RateScheduleLink:focus {
+  color: #003366;
+  text-decoration: underline;
+}
 
 #Payment {
   margin: 0 auto;
@@ -795,7 +829,7 @@ html.no-js #MoreInformation, html.no-js #MoreInformationContainer .Information {
 }
 
 .StudentComment {
-  margin-bottom: 48px;
+  margin-bottom: 36px;
 }
 
 .comment {
@@ -909,7 +943,8 @@ footer {
   padding-top: 48px;
 }
 
-body.InformationShowing footer, html.no-js footer {
+body.InformationShowing footer,
+html.no-js footer {
   background-color: #EEEEEE;
 }
 
@@ -1381,19 +1416,23 @@ input[type="button"] {
   *padding-bottom: 0px;
 }
 
-button:hover, button:focus,
-input[type="reset"]:hover, input[type="reset"]:focus,
-input[type="submit"]:hover, input[type="submit"]:focus,
-input[type="button"]:hover, input[type="button"]:focus {
-                              background: #900000; /* Old browsers */
-                              background: -moz-linear-gradient(top, #B00000 0%, #A00000 44%, #700000 100%); /* FF3.6+ */
-                              background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#B00000), color-stop(44%,#A00000), color-stop(100%,#700000)); /* Chrome,Safari4+ */
-                              background: -webkit-linear-gradient(top, #B00000 0%,#A00000 44%,#700000 100%); /* Chrome10+,Safari5.1+ */
-                              background: -o-linear-gradient(top, #B00000 0%,#A00000 44%,#700000 100%); /* Opera11.10+ */
-                              background: -ms-linear-gradient(top, #B00000 0%,#A00000 44%,#700000 100%); /* IE10+ */
-                              filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#B00000', endColorstr='#700000',GradientType=0 ); /* IE6-9 */
-                              background: linear-gradient(top, #B00000 0%,#A00000 44%,#700000 100%); /* W3C */
-                            }
+button:hover,
+button:focus,
+input[type="reset"]:hover,
+input[type="reset"]:focus,
+input[type="submit"]:hover,
+input[type="submit"]:focus,
+input[type="button"]:hover,
+input[type="button"]:focus {
+  background: #900000; /* Old browsers */
+  background: -moz-linear-gradient(top, #B00000 0%, #A00000 44%, #700000 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#B00000), color-stop(44%,#A00000), color-stop(100%,#700000)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #B00000 0%,#A00000 44%,#700000 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #B00000 0%,#A00000 44%,#700000 100%); /* Opera11.10+ */
+  background: -ms-linear-gradient(top, #B00000 0%,#A00000 44%,#700000 100%); /* IE10+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#B00000', endColorstr='#700000',GradientType=0 ); /* IE6-9 */
+  background: linear-gradient(top, #B00000 0%,#A00000 44%,#700000 100%); /* W3C */
+}
 
 button:active,
 input[type="reset"]:active,
@@ -1778,9 +1817,10 @@ input, textarea, select {
   color: #BBBBBB;
 }
 
-.InputContainer input:focus + span, .InputContainer textarea:focus + span {
-                                      opacity: 0.6;
-                                    }
+.InputContainer input:focus + span,
+.InputContainer textarea:focus + span {
+  opacity: 0.6;
+}
 
 .ContainsText span {
   font-size: 0 !important;
