@@ -760,13 +760,8 @@ html.no-js #MoreInformationContainer .Information {
   position: relative;
 }
 
-#MethodContainer > #Method h2 {
-  margin-bottom: 0;
-  padding-top: 24px;
-}
-
-#MethodContainer > #Method h3 {
-  padding-top: 24px;
+#Method section:not(:last-of-type) {
+  padding-bottom: 24px;
 }
 
 #Experience q {
