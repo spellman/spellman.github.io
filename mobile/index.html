@@ -1,0 +1,824 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    
+    <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+       Remove this if you use the .htaccess -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Spellman Tutoring - Math, Physics, Statistics</title>
+    <meta name="description" content="I tutor students in math and physics in Midland, TX. You get course material made clear and serious prep to execute on test day.">
+    <meta name="keywords" content="Spellman, Tutoring, tutor, teacher, Midland, Texas, TX, algebra, calculus, differential equations, discrete math, geometry, linear algebra, math, pre-calculus, real analysis, topology, trigonometry, physics, mechanics, statistics, college, Midland College, high school">
+    <meta name="author" content="Cort Spellman">
+    
+    <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.001">
+    
+    <!--
+    <meta name="viewport" content="width=960">
+    -->
+    
+    
+    <!-- Place favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+    
+    <!-- CSS: implied media="all" -->
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0b1/jquery.mobile-1.0b1.min.css" />
+    <link rel="stylesheet" href="css/style.css?v=2">
+    
+    <!-- All JavaScript at the bottom -->
+
+</head>
+
+<body>
+
+<div id="PageHome" data-role="page" data-theme="d">
+
+	<div class="Header">
+    
+		<h1 class="Wordmark ir">Spellman Tutoring</h1>
+        
+	</div><!-- /header -->
+
+	<div data-role="content">
+	
+		<h2>You want to succeed in school.<br />
+		I&#39;d like to help.</h2>
+		
+		<p>
+        
+            I tutor math, physics, and statistics in Midland, TX.<br />
+            I work with your schedule. You get course material made clear and serious prep to execute on test day.
+            
+        </p>
+
+        <!-- Uncomment this section to add a news item.
+        <div id="Alert">
+                
+            <p>
+            
+            	I can still accept a few more students this spring!
+
+            </p>
+            
+        </div>
+        -->
+    
+		<ul data-role="listview">
+        
+            <li><a href="#PageForm">Get Started!</a></li>
+            <li><a href="#PageMethod">Method</a></li>
+            <li><a href="#PageExperience">Experience</a></li>
+            <li><a href="#PageCoursesAndRate">Courses &amp; Rate</a></li>
+            <li><a href="#PageReviews">Reviews</a></li>
+            
+            
+            <li><a href="#PageAbout">About</a></li>
+            
+        </ul>
+        
+    </div><!-- /content -->
+
+	<div class="Footer">
+    
+		<span>979-436-2192</span>
+		
+        <a href="#PageForm">Schedule Tutoring</a>
+        
+        <div class="Facebook">
+		
+			<a href="http://www.facebook.com/pages/Spellman-Tutoring/105982122827749?sk=app_190322544333196" target="_blank"></a>
+			
+		</div>
+		
+		<div class="LinkedIn">
+		
+			<a href="http://www.linkedin.com/pub/cort-spellman/13/183/a27" target="_blank"></a>
+			
+		</div>
+        
+        <p>&copy; 2013 Spellman Tutoring</p>
+        
+	</div><!-- /footer -->
+    
+</div><!-- /page -->
+
+<div id="PageForm" data-role="page" data-theme="d">
+
+	<div class="Header">
+    
+		<a href="#PageHome"><h1 class="Wordmark ir">Spellman Tutoring</h1></a>
+        
+	</div><!-- /header -->
+
+	<div data-role="content">
+	
+		<a href="#PageAvailability" data-role="button" data-iconpos="right" data-icon="arrow-r">Check Availability</a>
+        
+        <p>
+		
+			Simply enter the following information and I&#39;ll contact you within 24 hours to set up your tutoring!
+		
+		</p>
+    
+		<form id="Form" action="php/schedule-form-to-email.php" method="POST" autocomplete = "off">
+            
+            <div class="InputContainer" data-role="fieldcontain">
+            
+                <label for="Name" class="Required">Name</label>
+                <input id="Name" type="text" maxlength="50" />
+                
+            </div>
+            
+            <div class="InputContainer" data-role="fieldcontain">
+            
+                <label for="Course" class="Required">Course</label>
+                <input id="Course" type="text" maxlength="50" />
+                
+            </div>
+            
+            <div class="InputContainer" data-role="fieldcontain">
+            
+                <label for="Date">Preferred date</label>
+                <input id="Date" type="text" maxlength="20" />
+                
+            </div>
+            
+            <div class="InputContainer" data-role="fieldcontain">
+            
+                <label for="Time">Preferred time</label>
+                <input id="Time" type="text" maxlength="20" />
+                
+            </div>
+            
+            <div class="InputContainer" data-role="fieldcontain">
+            
+                <label for="Phone" class="Required">Phone</label>
+                <input id="Phone" type="tel" maxlength="25" />
+                
+            </div>
+            
+            <div class="InputContainer" data-role="fieldcontain">
+            
+                <label for="Email" class="Required">Email</label>
+                <input id="Email" type="email" />
+                
+            </div>
+            
+            <div class="InputContainer" data-role="fieldcontain">
+            
+                <label for="PreferredContact">Preferred contact?</label>
+                <select id="PreferredContact" data-role="slider">
+                    <option value="Email">Email</option>
+                    <option value="Phone">Phone</option>
+                </select>
+            	
+            </div>
+            
+            <div data-role="fieldcontain">
+            
+                <label for="TimeToCall">Preferred time to call?</label>
+                <select id="TimeToCall">
+                    <option value="Morning">Morning</option>
+                    <option value="Afternoon">Afternoon</option>
+                    <option value="Evening">Evening</option>            
+                </select>
+                
+            </div>
+
+            <div class="InputContainer" data-role="fieldcontain">
+            
+                <label for="Message">Message</label>
+                <textarea id="Message" rows="5" name="message"></textarea>
+                
+            </div>
+
+            <input type="submit" value="Send Form" />
+            
+        </form>
+        
+	</div><!-- /content -->
+
+	<div class="Footer">
+	
+		<ul data-role="listview">
+
+            <li><a href="#PageHome">Home</a></li>
+            
+        </ul>
+        
+		<span>979-436-2192</span>
+		
+        <a href="#PageForm">Schedule Tutoring</a>
+        
+        <div class="Facebook">
+		
+			<a href="http://www.facebook.com/pages/Spellman-Tutoring/105982122827749?sk=app_190322544333196" target="_blank"></a>
+			
+		</div>
+		
+		<div class="LinkedIn">
+		
+			<a href="http://www.linkedin.com/pub/cort-spellman/13/183/a27" target="_blank"></a>
+			
+		</div>
+        
+        <p>&copy; 2013 Spellman Tutoring</p>
+        
+	</div><!-- /footer -->
+    
+</div><!-- /page -->
+
+<div id="PageAvailability" data-role="page" data-theme="d">
+
+	<div data-role="content">
+
+		<a href="#PageForm" data-role="button" data-icon="arrow-l">Back To Form</a>
+
+		<!-- embeds calendar with both spellmantutoring events and spellman.cort events via the shared calendar from spellman.cort -->
+		<iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;mode=WEEK&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=spellmantutoring%40gmail.com&amp;color=%23865A5A&amp;src=spellman.cort%40gmail.com&amp;color=%23865A5A&amp;ctz=America%2FChicago" style=" border-width:0 " width="640" height="1100" frameborder="0" scrolling="no"></iframe>
+
+	</div><!-- /content -->
+
+	<div class="Footer">
+	
+		<a href="#PageForm" data-role="button" data-icon="arrow-l">Back To Form</a>
+        
+	</div><!-- /footer -->
+    
+</div><!-- /page -->
+
+
+
+
+<div id="PageMethod" data-role="page" data-theme="d">
+
+	<div class="Header">
+    
+		<a href="#PageHome"><h1 class="Wordmark ir">Spellman Tutoring</h1></a>
+        
+	</div><!-- /header -->
+
+	<div data-role="content">
+	
+		<h1>Success requires comprehension <i>and</i> application.</h1>
+    
+		<q>
+        
+            <p>
+            
+                &ldquo;There is no royal road to geometry.&rdquo;<br />
+                <b>&mdash; Euclid</b>
+                
+            </p>
+        
+        </q>
+        
+        <p>
+        
+            In order to learn math or physics, you have to put in the practice time. There is only so much time in the day, though, and this class is one of many things you&#39;re doing. I help students learn and apply their course material so their studying is productive and they are prepared for test day.
+        
+        </p>
+        
+        <p>
+        
+            I have been a student, I earned my bachelor&#39;s and master&#39;s degrees in math and my bachelor&#39;s in physics, I taught math for several years as a graduate TA at Texas A&amp;M, and I have tutored privately since 2011. I know the material and I take pride in teaching it well.
+        
+        </p>
+        
+
+        
+        <h2>What do you want to do?</h2>
+        
+        <h3>Get help to excel in your course?</h3>
+        
+        <p>
+        
+            Don&#39;t wait! Your course material builds on itself so the sooner we begin, the better you will understand your entire course. Through regular tutoring sessions I&#39;ll help you build a proper foundation of knowledge, use concepts to solve problems, and quickly recognize which strategy will solve a problem. Homework and quizzes will be opportunities to secure a portion of your grade and we will ensure that you&#39;re ready to prove your understanding on test day.
+        
+        </p>
+        
+        <p>
+        
+            If you have specific questions, great! If you need help but aren&#39;t sure of exactly what to ask, that works too!
+        
+        </p>
+        
+        <h3>Review for your test?</h3>
+        
+        <p>
+        
+            Maybe you&#39;ve done your studying and want a review &frasl; Q&amp;A session. Let&#39;s do it!<br />
+            To prove your understanding on test day, you must be able to read a problem and immediately begin writing the solution. This requires knowing all terms, theorems, and formulas &frasl; algorithms; quickly recognizing which ones will solve a problem; and applying them quickly and correctly.
+            
+        </p>
+        
+        <p>
+            Take advantage of the reviews your professor and TA provide and then work with me if you need more help.  Neither they nor I can develop your understanding for you; you&#39;re going to have to put in the practice time.  If you need explanation or help with problem-solving strategies, though, I&#39;d like to work with you. There is only so much time in the day; I&#39;ll set you on the right track so your study time is productive.
+        
+        </p>
+        
+        <h3>Get help cramming?</h3>
+        
+        <p>
+        
+            I can help. Like academic duct tape, this is a stopgap measure and not a means of preparing for subsequent courses or careers. However, I will review the most important information with you, see where you need to improve in practice problems, and clarify as time allows.
+            
+        </p>
+        
+        <a href="#PageForm" data-role="button" data-iconpos="right" data-icon="arrow-r">Get Started!</a>
+        
+	</div><!-- /content -->
+
+	<div class="Footer">
+	
+		<ul data-role="listview">
+        
+            <li><span class="current">Method</span></li>
+            <li><a href="#PageExperience">Experience</a></li>
+            <li><a href="#PageCoursesAndRate">Courses &amp; Rate</a></li>
+            <li><a href="#PageReviews">Reviews</a></li>
+            <li><a href="#PageAbout">About</a></li>
+            <li><a href="#PageHome">Home</a></li>
+            
+        </ul>
+    
+		<span>979-436-2192</span>
+		
+        <a href="#PageForm">Schedule Tutoring</a>
+        
+        <div class="Facebook">
+		
+			<a href="http://www.facebook.com/pages/Spellman-Tutoring/105982122827749?sk=app_190322544333196" target="_blank"></a>
+			
+		</div>
+		
+		<div class="LinkedIn">
+		
+			<a href="http://www.linkedin.com/pub/cort-spellman/13/183/a27" target="_blank"></a>
+			
+		</div>
+        
+        <p>&copy; 2013 Spellman Tutoring</p>
+        
+	</div><!-- /footer -->
+    
+</div><!-- /page -->
+
+<div id="PageExperience" data-role="page" data-theme="d">
+
+	<div class="Header">
+    
+		<a href="#PageHome"><h1 class="Wordmark ir">Spellman Tutoring</h1></a>
+        
+	</div><!-- /header -->
+
+	<div data-role="content">
+	
+		<h1>Teaching experience</h1>
+		
+		<p>
+                    
+            I have been tutoring math and physics full-time since 2011. I've helped many students improve their grades, pass classes they were failing, or even get A&#39;s in courses they had previously dropped.
+                    
+        </p>
+    
+		<p>
+        
+            I taught math for several years as a graduate TA at Texas A&amp;M University. My classes consistently scored in the top percentiles on common exams, compared to 50 &ndash; 70 other sections each semester. I work hard to make concepts clear to each student and to establish understanding of the effort required for each student to achieve his or her goals.
+        
+        </p>
+        
+        <p>
+        
+            I graduated from Texas Christian University in 2005 with dual B.S. degrees in mathematics and physics; I graduated from Texas A&amp;M University in 2011 with an M.S. in mathematics. I have learned, as a student and as a teacher, what is needed to understand the material in a given course.
+        
+        </p>
+        
+        <q>
+        
+            <p>
+            
+                &ldquo;They call it coaching but it's really teaching.&rdquo;<br />
+                <b>&mdash; Vince Lombardi</b>
+                
+            </p>
+        
+        </q>
+        
+        <p>
+        
+                I taught student-athletes as the volunteer head coach of Texas A&amp;M Powerlifting from 2006 &ndash; 2013; I have been an assistant coach of the USA Powerlifting Junior National Team since 2008. I work tirelessly to find ways to engage and bring out the best in my lifters to help them reach their potential. My athletes have achieved success at the national and international levels and have excelled in their studies and subsequent careers.
+        
+        </p>
+        
+        <a href="#PageForm" data-role="button" data-iconpos="right" data-icon="arrow-r">Get Started!</a>
+        
+	</div><!-- /content -->
+
+	<div class="Footer">
+	
+		<ul data-role="listview">
+        
+            <li><a href="#PageMethod">Method</a></li>
+            <li><span class="current">Experience</span></li>
+            <li><a href="#PageCoursesAndRate">Courses &amp; Rate</a></li>
+            <li><a href="#PageReviews">Reviews</a></li>
+            <li><a href="#PageAbout">About</a></li>
+            <li><a href="#PageHome">Home</a></li>
+            
+        </ul>
+    
+		<span>979-436-2192</span>
+		
+        <a href="#PageForm">Schedule Tutoring</a>
+        
+        <div class="Facebook">
+		
+			<a href="http://www.facebook.com/pages/Spellman-Tutoring/105982122827749?sk=app_190322544333196" target="_blank"></a>
+			
+		</div>
+		
+		<div class="LinkedIn">
+		
+			<a href="http://www.linkedin.com/pub/cort-spellman/13/183/a27" target="_blank"></a>
+			
+		</div>
+        
+        <p>&copy; 2013 Spellman Tutoring</p>
+        
+	</div><!-- /footer -->
+    
+</div><!-- /page -->
+
+<div id="PageCoursesAndRate" data-role="page" data-theme="d">
+
+	<div class="Header">
+    
+		<a href="#PageHome"><h1 class="Wordmark ir">Spellman Tutoring</h1></a>
+        
+	</div><!-- /header -->
+
+	<div data-role="content">
+	
+		<h1>Courses &amp; Rate</h1>
+    
+		<h2 id="MidlandCollegeCourses">Midland College</h2>
+                        
+        <p>
+        
+            All Math Courses<br />
+            <span style="color: #888888">0170, 0270, 0370, 0371, 0372<br />
+            1314, 1316, 1324, 1325, 1342, 1350, 1351, 1414<br />
+            2412, 2413, 2414, 2415, 2420</span>
+        </p>
+        
+        <p>
+        
+            Physics 1401, 1402, 2425, 2426
+            
+        </p>
+        
+        <h2 id="HighSchoolCourses">High School</h2>
+        
+        <p>
+        
+            All Math, Physics, and Statistics Courses
+            
+        </p>
+        
+        <div id="LeaveYourCourseOut">
+        
+            <p>
+            
+                <b>Did I leave your course out?</b><br />
+                I may be able to help you with a course I don't normally tutor. I have tutored a student in a graduate geophysics course and I have helped a chemistry student become proficient with unit conversions.<br />
+                <a href="#PageForm">Click here to contact me</a> &mdash; I may be able to help you out.
+            
+            </p>
+            
+        </div>
+        
+        <h2>Rate</h2>
+                        
+        <p>
+        
+            I charge $30/hour for one-on-one tutoring. I like to keep things simple &mdash; no packages, no fees; just a flat rate.
+            
+        </p>
+        
+        <p>
+        
+            I work with small groups as well. <a href="#PageForm">Click here</a> to set up a session. The discounted rate per person will depend on the size of your group.
+        
+        </p>
+        
+        <p>
+        
+            I accept cash, checks, and <a href="https://www.paypal.com/" target="_blank">PayPal</a>.
+        
+        </p>
+        
+        <div id="Payment">
+        
+            <div id="Cash"><!-- payment methods background image --></div>
+            <div id="Paypal"><!-- payment methods background image --></div>
+        
+        </div>
+        
+        <a href="#PageForm" data-role="button" data-iconpos="right" data-icon="arrow-r">Get Started!</a>
+        
+	</div><!-- /content -->
+
+	<div class="Footer">
+	
+		<ul data-role="listview">
+        
+            <li><a href="#PageMethod">Method</a></li>
+            <li><a href="#PageExperience">Experience</a></li>
+            <li><span class="current">Courses &amp; Rate</span></li>
+            <li><a href="#PageReviews">Reviews</a></li>
+            <li><a href="#PageAbout">About</a></li>
+            <li><a href="#PageHome">Home</a></li>
+            
+        </ul>
+    
+		<span>979-436-2192</span>
+		
+        <a href="#PageForm">Schedule Tutoring</a>
+        
+        <div class="Facebook">
+		
+			<a href="http://www.facebook.com/pages/Spellman-Tutoring/105982122827749?sk=app_190322544333196" target="_blank"></a>
+			
+		</div>
+		
+		<div class="LinkedIn">
+		
+			<a href="http://www.linkedin.com/pub/cort-spellman/13/183/a27" target="_blank"></a>
+			
+		</div>
+        
+        <p>&copy; 2013 Spellman Tutoring</p>
+        
+	</div><!-- /footer -->
+    
+</div><!-- /page -->
+
+<div id="PageReviews" data-role="page" data-theme="d">
+
+	<div class="Header">
+    
+		<a href="#PageHome"><h1 class="Wordmark ir">Spellman Tutoring</h1></a>
+        
+	</div><!-- /header -->
+
+	<div data-role="content">
+
+	    <h1>Comments from students</h1>
+
+        <p class="studentComment">
+
+            <span class="comment">&ldquo;I GOT AN A IN PHYSICS! Thanks so so so much!&rdquo;</span><br />
+                <span class="student">&mdash; Physics (mechanics) student</span>
+
+        </p>
+
+        <p class="studentComment">
+
+            <span class="comment">&ldquo;I used to hate math but now it&#39;s my favorite subject because I understand it.&rdquo;</span><br />
+                <span class="student">&mdash; Business calculus student</span>
+
+        </p>
+
+        <p class="studentComment">
+
+            <span class="comment">&ldquo;Finally got through calculus and graduated!&rdquo;</span><br />
+                <span class="student">&mdash; Business calculus student</span>
+
+        </p>
+	
+		<h1>Love notes from course reviews</h1>
+    
+		<div id="understanding-of-students-needs" class="ir">
+                        
+            Understanding of students' needs. 100% recommended.
+        
+        </div>
+        
+        <div id="knows-material-well" class="ir">
+        
+            Knows material well and teaching it very well.
+        
+        </div>
+        
+        <div id="one-of-the-best" class="ir">
+        
+            He is one of the best at communicating the concepts of calculus 2.
+        
+        </div>
+        
+        <div id="easily-get-along-with" class="ir">
+        
+            He's someone you can easily get along with and someone you aren't scared to ask questions.
+        
+        </div>
+        
+        <div id="learned-more" class="ir">
+        
+            I learned more from him than any of my other TAs!
+        
+        </div>
+        
+        <div id="genuinely-cares" class="ir">
+        
+            He genuinely cares about our grades and understanding of the material.
+        
+        </div>
+        
+        <div id="very-knowledgeable" class="ir">
+        
+            He was very knowledgeable and presented the material in a way I could understand.
+        
+        </div>
+        
+        <div id="he-is-legit" class="ir">
+        
+            He is legit.
+        
+        </div>
+        
+        <div id="no-hes-mine" class="ir">
+        
+            Do you recommend this TA?  Why or why not? NO! He's mine!
+        
+        </div>
+        
+        <a href="#PageForm" data-role="button" data-iconpos="right" data-icon="arrow-r">Get Started!</a>
+        
+	</div><!-- /content -->
+
+	<div class="Footer">
+	
+		<ul data-role="listview">
+        
+            <li><a href="#PageMethod">Method</a></li>
+            <li><a href="#PageExperience">Experience</a></li>
+            <li><a href="#PageCoursesAndRate">Courses &amp; Rate</a></li>
+            <li><span class="current">Reviews</span></li>
+            <li><a href="#PageAbout">About</a></li>
+            <li><a href="#PageHome">Home</a></li>
+            
+        </ul>
+    
+		<span>979-436-2192</span>
+		
+        <a href="#PageForm">Schedule Tutoring</a>
+        
+        <div class="Facebook">
+		
+			<a href="http://www.facebook.com/pages/Spellman-Tutoring/105982122827749?sk=app_190322544333196" target="_blank"></a>
+			
+		</div>
+		
+		<div class="LinkedIn">
+		
+			<a href="http://www.linkedin.com/pub/cort-spellman/13/183/a27" target="_blank"></a>
+			
+		</div>
+		
+        <p>&copy; 2013 Spellman Tutoring</p>
+        
+	</div><!-- /footer -->
+    
+</div><!-- /page -->
+
+<div id="PageAbout" data-role="page" data-theme="d">
+
+	<div class="Header">
+    
+		<a href="#PageHome"><h1 class="Wordmark ir">Spellman Tutoring</h1></a>
+        
+	</div><!-- /header -->
+
+	<div data-role="content">
+    
+    	<h1>About Spellman Tutoring</h1>
+    	
+		<p>
+
+            Howdy! My name is Cort Spellman.<br />
+            I&#39;m from Fort Worth, Texas.<br />
+            
+        </p>
+        
+		<div id="Portrait" class="ir">
+        
+            Cort Spellman, Founder
+        
+        </div>
+        
+        <p>
+        
+        	I tutor math, physics, and statistics in Midland, TX.<br />
+        	I am an assistant coach of the USA Powerlifting Junior National Team.<br />
+        	I was the volunteer head coach of Texas A&amp;M Powerlifting from 2006 &ndash; 2013.
+        	
+        </p>
+        
+        <p>
+        
+            <span class="Tamu">M.S. Mathematics, Texas A&amp;M</span><br />
+            <span class="Tcu">B.S. Mathematics, TCU</span><br />
+            <span class="Tcu">B.S. Physics, TCU</span>
+            
+        </p>
+        
+        <q>
+        
+    		<p>
+    		
+    			&ldquo;To live is to fly.&rdquo;<br />
+    			<b>&mdash; Townes Van Zandt</b>
+    			
+    		</p>
+        
+        </q>
+        
+        <a href="#PageForm" data-role="button" data-iconpos="right" data-icon="arrow-r">Get Started!</a>
+        
+	</div><!-- /content -->
+
+	<div class="Footer">
+	
+		<ul data-role="listview">
+        
+            <li><a href="#PageMethod">Method</a></li>
+            <li><a href="#PageExperience">Experience</a></li>
+            <li><a href="#PageCoursesAndRate">Courses &amp; Rate</a></li>
+            <li><a href="#PageReviews">Reviews</a></li>
+            <li><span class="current">About</span></li>
+            <li><a href="#PageHome">Home</a></li>
+            
+        </ul>
+    
+		<span>979-436-2192</span>
+		
+        <a href="#PageForm">Schedule Tutoring</a>
+        
+        <div class="Facebook">
+		
+			<a href="http://www.facebook.com/pages/Spellman-Tutoring/105982122827749?sk=app_190322544333196" target="_blank"></a>
+			
+		</div>
+		
+		<div class="LinkedIn">
+		
+			<a href="http://www.linkedin.com/pub/cort-spellman/13/183/a27" target="_blank"></a>
+			
+		</div>
+        
+        <p>&copy; 2013 Spellman Tutoring</p>
+        
+	</div><!-- /footer -->
+    
+</div><!-- /page -->
+
+  <!-- JavaScript at the bottom for fast page loading -->
+
+  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.js"></script>
+  <script>window.jQuery || document.write("<script src='js/libs/jquery-1.5.1.min.js'>\x3C/script>")</script>
+  
+  <!-- scripts concatenated and minified via ant build script-->
+  <!-- <script src="js/plugins.js"></script>-->
+  <script src="js/script.js"></script>
+  <!-- end scripts-->
+  
+  <!-- Grab jQuery CDN's jQuery Mobile -->
+  <script src="http://code.jquery.com/mobile/1.0b1/jquery.mobile-1.0b1.min.js"></script>
+
+  <!--[if lt IE 7 ]>
+    <script src="js/libs/dd_belatedpng.js"></script>
+    <script>DD_belatedPNG.fix("img, .png_bg"); // Fix any <img> or .png_bg bg-images. Also, please read goo.gl/mZiyb </script>
+  <![endif]-->
+
+
+
+  <!-- mathiasbynens.be/notes/async-analytics-snippet Change UA-XXXXX-X to be your site's ID -->
+  <script>
+    var _gaq=[["_setAccount","UA-24324785-1"],['_setDomainName', '.spellmantutoring.com'],["_trackPageview"]];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+    g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
+    s.parentNode.insertBefore(g,s)}(document,"script"));
+  </script>
+
+</body>
+
+</html>
